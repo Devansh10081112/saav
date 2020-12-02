@@ -1,0 +1,32 @@
+class Chain {
+    coustructor(bodyA,bodyB){
+        var options ={bodyA:bird.body,
+            bodyB:clog.body,
+            stiffness:0.5,length:11}
+        
+            this.chain = Constraint.create(options);     
+            
+              World.add(world, this.chain);   
+
+            
+            }
+         display(){
+    var pointA = this.chain.bodyA.position;
+    var pointB = this.chain.bodyB.position;
+            strokeWeight(3);
+            line(pointA.x,pointA.y,pointB.x,pointB.y)
+
+        }
+            
+    
+    }
+
+
+
+
+
+
+
+
+
+
